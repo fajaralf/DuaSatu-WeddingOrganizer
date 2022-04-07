@@ -2,6 +2,7 @@
 
 /** @var yii\web\View $this */
 
+use Codeception\Lib\Interfaces\Web;
 use yii\helpers\Html;
 
 $this->title = "About Us";
@@ -20,7 +21,7 @@ $this->params["breadcrumbs"][] = $this->title;
             <div class="col-lg-4">
                 <div class="jumbotron text-center bg-transparent">
                     <p>
-                        <img src="../../web/assets/images/crew/lukman.jpg" alt="Lukman" class="img-thumbnail"> 
+                        <?= Html::img('@web/assets/images/crew/lukman.jpg', ['class'=>'img-thumbnail', 'alt'=>'Lukman']) ?>
                     </p>
                     <p>Lukman</p>
                 </div>
@@ -29,7 +30,7 @@ $this->params["breadcrumbs"][] = $this->title;
             <div class="col-lg-4">
                 <div class="jumbotron text-center bg-transparent">
                     <p>
-                        <img src="../../web/assets/images/crew/putri.jpg" alt="Putri" class="img-thumbnail">
+                        <?= Html::img('@web/assets/images/crew/putri.jpg', ['class'=>'img-thumbnail', 'alt'=>'Putri']) ?>
                     </p>
                     <p>Putri</p>
                 </div>
@@ -38,7 +39,7 @@ $this->params["breadcrumbs"][] = $this->title;
             <div class="col-lg-4">
                 <div class="jumbotron text-center bg-transparent">
                     <p>
-                        <img src="../../web/assets/images/crew/rahma.jpg" alt="Rahma" class="img-thumbnail">
+                        <?= Html::img('@web/assets/images/crew/rahma.jpg', ['class'=>'img-thumbnail', 'alt'=>'Rahma']) ?>
                     </p>
                     <p>Rahma</p>
                 </div>
@@ -47,7 +48,7 @@ $this->params["breadcrumbs"][] = $this->title;
             <div class="col-lg-4">
                 <div class="jumbotron text-center bg-transparent">
                     <p>
-                        <img src="../../web/assets/images/crew/yasin.jpg" alt="Yasin" class="img-thumbnail">
+                        <?= Html::img('@web/assets/images/crew/yasin.jpg', ['class'=>'img-thumbnail', 'alt'=>'Yasin']) ?>
                     </p>
                     <p>Yasin</p>
                 </div>
@@ -56,7 +57,7 @@ $this->params["breadcrumbs"][] = $this->title;
             <div class="col-lg-4">
                 <div class="jumbotron text-center bg-transparent">
                     <p>
-                        <img src="../../web/assets/images/crew/fajar.jpg" alt="Fajar" class="img-thumbnail">
+                        <?= Html::img('@web/assets/images/crew/fajar.jpg', ['class'=>'img-thumbnail', 'alt'=>'Fajar']) ?>
                     </p>
                     <p>Fajar</p>
                 </div>
@@ -65,7 +66,7 @@ $this->params["breadcrumbs"][] = $this->title;
             <div class="col-lg-4">
                 <div class="jumbotron text-center bg-transparent">
                     <p>
-                        <img src="../../assets/images/crew/eko.jpg" alt="Eko" class="img-thumbnail">
+                        <?= Html::img('@web/assets/images/crew/eko.jpg', ['class'=>'img-thumbnail', 'alt'=>'Eko']) ?>
                     </p>
                     <p>Eko</p>
                 </div>
